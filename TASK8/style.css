@@ -18,9 +18,9 @@ body {
 }
 
 .box {
-    background-color: #e3f2fd; /* Light Blue */
+    background-color: #e3f2fd; 
     border: 1px solid #90caf9;
-    color: #1565c0; /* Darker Blue Text */
+    color: #1565c0; 
     padding: 30px;
     text-align: center;
     font-size: 18px;
