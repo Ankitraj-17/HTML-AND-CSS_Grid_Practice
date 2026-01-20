@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Task 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task 4: Grid Rows</h1>
+    
+    <div class="container">
+        <div class="box">Box 1 - wow</div>
+        <div class="box">Box 2 - wow</div>
+        <div class="box">Box 3 - wow</div>
+        <div class="box">Box 4 - wow</div>
+        <div class="box">Box 5 - wow</div>
+        <div class="box">Box 6 - wow</div>
+    </div>
+
+    <section class="answers">
+        <h2>Answers</h2>
+        
+        <h3>1. What does auto do in grid rows?</h3>
+        <p>auto adjusts the row height based on content. If content is small, row is small. If content is big, row grows.</p>
+
+        <h3>2. Which row grows based on content?</h3>
+        <p>The second row (Box 4, Box 5, Box 6) uses auto so it grows based on content.</p>
+
+        <h3>3. Can rows have different heights?</h3>
+        <p>Yes. First row is 100px fixed, second row is auto.</p>
+
+        <h3>4. What happens if content is very large?</h3>
+        <p>With auto, row expands. With fixed px, content overflows.</p>
+
+        <h3>5. Where are grid rows useful in real layouts?</h3>
+        <p>Useful for header (fixed), main content (auto), footer (fixed).</p>
+    </section>
+</body>
+</html>
