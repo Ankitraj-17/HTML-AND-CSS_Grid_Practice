@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Task 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task 1: CSS Grid Introduction</h1>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+        <div class="box">Box 6</div>
+    </div>
+
+    <section class="answers">
+        <h2>Answers</h2>
+        
+        <h3>1. What is the difference between a normal div and a grid container?</h3>
+        <p>A normal div (block element) lays out its children vertically, one after another. A grid container (<code>display: grid</code>) changes the layout context of its direct children, allowing them to be placed into a 2D grid of rows and columns. While visually they may look initially similar (staking vertically), the grid container enables powerful alignment and track sizing capabilities that a normal block container does not have.</p>
+
+        <h3>2. Why does the layout look the same even after applying Grid?</h3>
+        <p>The layout looks the same because, by default, a CSS Grid has a single column. The grid items (the children) are placed into implicit rows, one per row. Since block-level elements also stack vertically, the visual starting point is identical until you explicitly define columns (e.g., using <code>grid-template-columns</code>).</p>
+
+        <h3>3. Are grid items created automatically?</h3>
+        <p>Yes, all direct children of the element with <code>display: grid</code> automatically become grid items. You do not need to add any special class or property to the children for them to be part of the grid.</p>
+
+        <h3>4. Can Grid work without rows or columns?</h3>
+        <p>Yes. If you don't define explicit rows or columns, the grid will create them implicitly as needed to hold the content. By default, it creates one column and new rows for each item.</p>
+
+        <h3>5. What do you think Grid needs to show visible changes?</h3>
+        <p>To see a "grid" structure (items next to each other), you generally need to define <code>grid-template-columns</code> (e.g., <code>grid-template-columns: 1fr 1fr 1fr;</code>) or use <code>grid-auto-flow: column;</code>. This tells the browser to place items into multiple columns instead of just one vertical stack.</p>
+    </section>
+</body>
+</html>
